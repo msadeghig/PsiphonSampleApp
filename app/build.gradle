@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        applicationId "ee.traxnet.psiphonsampleapp"
+
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        buildConfigField "String" , "bannerAdUnitId","\"cee828b341334366a319c9213025dcb0\""
+        buildConfigField "String" , "nativeBannerAdUnitId","\"77d2433e8e3c427ea328b5461283c0bb\""
+        buildConfigField "String" , "interstitialBannerAdUnitId","\"ffce9fb4669f44dbb73bd1e7ebbc58cd\""
+        buildConfigField "String" , "rewardedVideoAdUnitId","\"1a5e293710ea4356ad9b015e8e64411b\""
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation('com.mopub:mopub-sdk:5.3.0@aar') {
+        transitive = true
+    }
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
