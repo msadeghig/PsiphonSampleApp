@@ -12,9 +12,7 @@ android {
         versionName "1.0"
 
         buildConfigField "String" , "bannerAdUnitId","\"cee828b341334366a319c9213025dcb0\""
-        buildConfigField "String" , "nativeBannerAdUnitId","\"77d2433e8e3c427ea328b5461283c0bb\""
         buildConfigField "String" , "interstitialBannerAdUnitId","\"ffce9fb4669f44dbb73bd1e7ebbc58cd\""
-        buildConfigField "String" , "rewardedVideoAdUnitId","\"1a5e293710ea4356ad9b015e8e64411b\""
     }
     buildTypes {
         release {

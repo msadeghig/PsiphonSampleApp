@@ -24,7 +24,7 @@ public class TraxnetApplication extends Application {
         super.onCreate();
         if (!MoPub.isSdkInitialized()) {
             SdkConfiguration sdkConfiguration =
-                    new SdkConfiguration.Builder(BuildConfig.rewardedVideoAdUnitId).build();
+                    new SdkConfiguration.Builder(BuildConfig.bannerAdUnitId).build();
             MoPub.initializeSdk(this, sdkConfiguration, initSdkListener());
 
         }

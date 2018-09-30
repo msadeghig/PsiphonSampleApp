@@ -17,50 +17,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-
-            <LinearLayout
-                android:id="@+id/llRequestAd"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                android:layout_centerHorizontal="true"
-                android:background="@android:color/darker_gray"
-                android:orientation="vertical"
-                android:padding="8dp">
-
-                <Button
-                    android:id="@+id/loadRewardedVideo"
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_weight="1"
-                    android:text="Load Rewarded Video" />
-
-                <Button
-                    android:id="@+id/showRewardedVideo"
-                    android:layout_width="250dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_weight="1"
-                    android:text="Show Rewarded Video" />
-
-            </LinearLayout>
-
             <Button
                 android:id="@+id/banner"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/llRequestAd"
                 android:layout_centerHorizontal="true"
                 android:text="Banner" />
-
-            <!--<Button-->
-                <!--android:id="@+id/native_banner"-->
-                <!--android:layout_width="250dp"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_below="@+id/banner"-->
-                <!--android:layout_centerHorizontal="true"-->
-                <!--android:text="Narive Banner" />-->
 
             <Button
                 android:id="@+id/interstitial"

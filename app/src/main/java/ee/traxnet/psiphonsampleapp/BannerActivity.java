@@ -42,6 +42,10 @@ public class BannerActivity extends Activity implements MoPubView.BannerAdListen
     @Override
     public void onBannerLoaded(MoPubView moPubView) {
         LogUtils.LOGI("Banner Loded");
+//        LogUtils.LOGE("Tag: " + moPubView.getTag());
+        LogUtils.LOGE("KeyWords: " + moPubView.getKeywords());
+        LogUtils.LOGE("UserDataKeywords: " + moPubView.getUserDataKeywords());
+        LogUtils.LOGE("AdFormat: " + moPubView.getAdFormat().toString());
         Toast.makeText(this, "Banner Loaded", Toast.LENGTH_SHORT).show();
     }
 
